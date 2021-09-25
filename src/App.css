@@ -1,7 +1,16 @@
-.App {
-  text-align: center;
+.App{
+  background-image: url(./bg.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background-size: cover;
+  background-position: center;
 }
 
+
+/*
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -12,16 +21,11 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+*/
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*
+.nav{
+ 
 }
 
 .App-link {
@@ -34,5 +38,107 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}*/
+
+.App-header {
+  margin-top: 10px;
+  background-color: #020e25;
+  width: 100%;
+  height: 60px;
+}
+ 
+.Topbar{
+  width: 100%;
+  min-height: 100px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+.Get-user{
+  background-image: linear-gradient(yellow,orange);
+  color: rgb(10, 10, 10);
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  position: relative;
+  bottom:  25px;
+  margin-left: 75%;
+  font-size: 15px;
+}
+.Get-user:hover{
+  transform: scale(1.3);
+  transition: 0.5s;
+  background-image: linear-gradient(pink, lightblue);
+  color:  #071022 ;
+}
+.row {
+  margin: 30px;
+}
+.column {
+  float: left;
+  margin: 20px 85px 20px 85px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  width: 250px;
+  height: 300px;
+  text-align: center;
+  background-image: linear-gradient(pink, lightblue);
+}
+.card:hover{
+  transform: scale(1.25);
+  transition: 0.5s;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.card-img-top {
+  background-color: black;
+  border-radius: 50%;
+  height: 70%;
+  width: 80%;
+  border: 2px solid rgb(131, 125, 125);
+}
+.card-img-top:hover{
+  transform: rotate(360deg);
+  transition: 2s;
+}
+.card-title {
+  font-family: "Ubuntu", sans-serif;
+}
+.card-text {
+  color: rebeccapurple;
+  font-family: "Ubuntu", sans-serif;
+}
+.card:hover {
+  box-shadow: 0px 0px 5px 5px white;
+  cursor: pointer;
+}
+.card:hover .card-text {
+  color: #1a54c7;
+}
+.loader {
+  position: absolute;
+  top: 50%;left: 50%;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 8px solid palevioletred;
+  border-top: 8px solid rgb(54, 144, 173);
+  animation: rotate 1.5s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%,-50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%,-50%) rotate(360deg);
   }
 }
